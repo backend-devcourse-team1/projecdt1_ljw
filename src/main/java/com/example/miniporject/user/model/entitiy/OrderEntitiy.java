@@ -55,9 +55,11 @@ public class OrderEntitiy {
 
     public void changUserEmail(String newEmail) {
         this.email = newEmail;
+        this.updateAt = LocalDateTime.now();
     }
 
     public void updateOrderStatus(OrderStatus orderStatus) {
         this.orderStatus = orderStatus;
+        this.updateAt = LocalDateTime.now();
     }
 }
