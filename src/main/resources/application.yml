@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: MiniPorject
+  datasource:
+    url: jdbc:mysql://localhost:3306/miniproject
+    username: 'root'
+    password: '20190619'
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.MySQLDialect
+    database-platform: org.hibernate.dialect.MySQL8Dialect
